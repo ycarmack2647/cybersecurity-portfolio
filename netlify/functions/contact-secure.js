@@ -118,7 +118,7 @@ exports.handler = async (event, context) => {
                 },
                 body: JSON.stringify({ 
                     success: false, 
-                    error: validationErrors[0]
+                    error: validationErrors[0] // Return first error
                 })
             };
         }
